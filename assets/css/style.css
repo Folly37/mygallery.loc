@@ -1,4 +1,3 @@
-/* style.css */
 :root {
     --primary-bg: #121212;
     --secondary-bg: #1e1e1e;
@@ -12,7 +11,6 @@
     --transition: all 0.3s ease;
 }
 
-/* Базовые стили */
 body {
     background-color: var(--primary-bg);
     color: var(--text-primary);
@@ -21,7 +19,6 @@ body {
     min-height: 100vh;
 }
 
-/* Типография */
 h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
     margin-bottom: 1rem;
@@ -37,7 +34,6 @@ h1, h2, h3, h4, h5, h6 {
     opacity: 0.9;
 }
 
-/* Навигация */
 .navbar {
     background-color: var(--secondary-bg) !important;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -61,7 +57,6 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--accent-color) !important;
 }
 
-/* Кнопки */
 .btn {
     border-radius: var(--border-radius);
     padding: 0.75rem 2rem;
@@ -90,14 +85,13 @@ h1, h2, h3, h4, h5, h6 {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-/* Карточки */
 .card {
     background-color: var(--card-bg);
     border: none;
     border-radius: var(--border-radius);
     overflow: hidden;
     transition: var(--transition);
-    color: var(--text-primary); /* Белый текст */
+    color: var(--text-primary); 
 }
 
 .card:hover {
@@ -116,7 +110,6 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 1.5rem;
 }
 
-/* Секции */
 .hero-section {
     background: linear-gradient(135deg, var(--secondary-bg) 0%, var(--primary-bg) 100%);
     color: white;
@@ -144,7 +137,6 @@ h1, h2, h3, h4, h5, h6 {
     padding: 5rem 0;
 }
 
-/* Галерея */
 .gallery-grid {
     display: grid;
     gap: 1.5rem;
@@ -171,7 +163,6 @@ h1, h2, h3, h4, h5, h6 {
     transition: transform 0.5s;
 }
 
-/* Анимации */
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
@@ -181,7 +172,6 @@ h1, h2, h3, h4, h5, h6 {
     animation: fadeIn 0.6s ease-out forwards;
 }
 
-/* Утилиты */
 .text-accent {
     color: var(--accent-color) !important;
 }
@@ -199,7 +189,6 @@ h1, h2, h3, h4, h5, h6 {
     padding-bottom: 3rem !important;
 }
 
-/* Адаптивность */
 @media (max-width: 768px) {
     .hero-section {
         padding: 4rem 0;
@@ -221,8 +210,6 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-
-/* Эффекты при наведении */
 a, button {
     transition: var(--transition);
 }
@@ -232,7 +219,6 @@ a:hover {
     opacity: 0.9;
 }
 
-/* Кастомный скроллбар */
 ::-webkit-scrollbar {
     width: 8px;
 }
@@ -253,4 +239,8 @@ a:hover {
 
 .form-text {
     color: rgb(94, 94, 94) ;
+}
+
+.btngal {
+    background-color: rgb(255, 255, 108);
 }

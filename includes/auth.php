@@ -8,7 +8,7 @@ function getCurrentUser() {
         return null;
     }
 
-   $pdo = new PDO('pgsql:host=localhost;dbname=gallery', 'postgres', '1234');
+    $pdo = new PDO('pgsql:host=localhost;dbname=gallery', 'postgres', '1234');
     
     $stmt = $pdo->prepare("SELECT * FROM users WHERE id = ?");
     $stmt->execute([$_SESSION['user_id']]);

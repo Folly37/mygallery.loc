@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <h5><i class="fas fa-camera"></i> <?= APP_NAME ?></h5>
+                <h5><img width="30px" src="favicon.ico" alt=""></i> <?= APP_NAME ?></h5>
                 <p class="text-muted">Your personal photo gallery solution.</p>
             </div>
             <div class="col-md-3">

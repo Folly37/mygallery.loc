@@ -16,6 +16,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $_SESSION['user_id'] = $user['id'];
         $_SESSION['username'] = $user['username'];
         $_SESSION['email'] = $user['email'];
+
+            // echo "<pre>Данные пользователя: ";
+            // print_r($user);
+            // echo "Сессия: ";
+            // print_r($_SESSION);
+            // echo "</pre>";
         
     header("Location: " . BASE_URL . "/?page=profile");
         exit;

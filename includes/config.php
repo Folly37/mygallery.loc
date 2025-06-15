@@ -16,7 +16,7 @@ define('ALLOWED_MIME_TYPES', serialize(['image/jpeg', 'image/png', 'image/gif'])
 
 define('MAX_FILE_SIZE', 5242880);
 
-// Старт сессии
+
 if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }

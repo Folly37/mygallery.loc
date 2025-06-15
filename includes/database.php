@@ -17,7 +17,25 @@ class Database {
         } catch (PDOException $e) {
             die("PostgreSQL connection failed: " . $e->getMessage());
         }
+        if (!defined('DB_HOST') || !defined('DB_PORT') || !defined('DB_NAME') || 
+        !defined('DB_USER') || !defined('DB_PASS')) {
+        die("Database configuration constants are not defined");
     }
+    
+    try {
+        $this->pdo = new PDO(
+            'pgsql:host=' . DB_HOST . 
+            ';port=' . DB_PORT . 
+            ';dbname=' . DB_NAME,
+            DB_USER,
+            DB_PASS
+        );
+        // ... остальной код
+    } catch (PDOException $e) {
+        die("PostgreSQL connection failed: " . $e->getMessage());
+    }
+    }
+    
 
     public static function getInstance() {
         if (!self::$instance) {
@@ -25,4 +43,5 @@ class Database {
         }
         return self::$instance->pdo;
     }
+    
 }

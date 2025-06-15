@@ -59,7 +59,6 @@ function registerUser($username, $email, $password, $confirm_password) {
     return $errors;
 }
 
-
 function getCurrentUser() {
     if (!isset($_SESSION['user_id'])) {
         return null;

@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
         <a class="navbar-brand" href="<?= BASE_URL ?>">
-           <img width="30px" src="favicon.ico" alt=""> Photo Gallery
+            <img width="30px" src="favicon.ico" alt=""> Photo Gallery
         </a>
         
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
@@ -13,7 +13,7 @@
             <ul class="navbar-nav me-auto">
                 <li class="nav-item">   
                     <a class="nav-link <?= ($page === 'home') ? 'active' : '' ?>" 
-                       href="<?= BASE_URL ?>/?page=home">
+                        href="<?= BASE_URL ?>/?page=home">
                         <i class="fas fa-home me-1"></i> Home
                     </a>
                 </li>
@@ -21,13 +21,13 @@
                 <?php if (isLoggedIn()): ?>
                 <li class="nav-item">
                     <a class="nav-link <?= ($page === 'gallery') ? 'active' : '' ?>" 
-                       href="<?= BASE_URL ?>/?page=gallery">
+                        href="<?= BASE_URL ?>/?page=gallery">
                         <i class="fas fa-images me-1"></i> Gallery
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link <?= ($page === 'upload') ? 'active' : '' ?>" 
-                       href="<?= BASE_URL ?>/?page=upload">
+                        href="<?= BASE_URL ?>/?page=upload">
                         <i class="fas fa-upload me-1"></i> Upload
                     </a>
                 </li>
@@ -38,7 +38,7 @@
                 <?php if (isLoggedIn()): ?>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="userDropdown" 
-                       role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         <i class="fas fa-user-circle me-1"></i> <?= htmlspecialchars($_SESSION['username']) ?>
                     </a>
                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
@@ -52,13 +52,13 @@
                 <?php else: ?>
                 <li class="nav-item">
                     <a class="nav-link <?= ($page === 'login') ? 'active' : '' ?>" 
-                       href="<?= BASE_URL ?>/?page=login">
+                        href="<?= BASE_URL ?>/?page=login">
                         <i class="fas fa-sign-in-alt me-1"></i> Login
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link <?= ($page === 'register') ? 'active' : '' ?>" 
-                       href="<?= BASE_URL ?>/?page=register">
+                        href="<?= BASE_URL ?>/?page=register">
                         <i class="fas fa-user-plus me-1"></i> Register
                     </a>
                 </li>

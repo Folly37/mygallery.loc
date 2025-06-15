@@ -13,7 +13,7 @@ if (!$user) {
         <div class="card mb-4">
             <div class="card-body text-center">
                 <img src="<?= BASE_URL ?>/uploads/avatars/<?= $user['avatar'] ?? 'default.jpg' ?>" 
-                     class="rounded-circle mb-3" width="150" height="150" alt="Avatar">
+                    class="rounded-circle mb-3" width="150" height="150" alt="Avatar">
                 <h4><?= htmlspecialchars($user['username']) ?></h4>
                 <p class="text-muted"><?= htmlspecialchars($user['email']) ?></p>
 
@@ -45,13 +45,13 @@ if (!$user) {
                     <div class="mb-3">
                         <label for="username" class="form-label">Username</label>
                         <input type="text" class="form-control" id="username" name="username" 
-                               value="<?= htmlspecialchars($user['username']) ?>" required>
+                            value="<?= htmlspecialchars($user['username']) ?>" required>
                     </div>
 
                     <div class="mb-3">
                         <label for="email" class="form-label">Email</label>
                         <input type="email" class="form-control" id="email" name="email" 
-                               value="<?= htmlspecialchars($user['email']) ?>" required>
+                            value="<?= htmlspecialchars($user['email']) ?>" required>
                     </div>
 
                     <div class="mb-3">
